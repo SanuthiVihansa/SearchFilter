@@ -24,7 +24,9 @@ const handleSearch =(event)=>{
         search:<input name='query' type="text" onChange={handleSearch}/>
       </div>
       {filterList && filterList.map((item,index)=>{
+        return(
         <div key={index}>{item}</div>
+        );
       })}
       
     </div>
