@@ -8,7 +8,7 @@ function App() {
 const list = ["Banana","Apple","Orange","Mango","Pineapple","Watermelon"];
 const [filterList,setFilterList]= useState(list);
 
-const handleSeaech =(event)=>{
+const handleSearch =(event)=>{
   if(event.target.value===""){
     setFilterList(list);
     return;
@@ -21,7 +21,7 @@ const handleSeaech =(event)=>{
   return (
     <div className='app'>
       <div>
-        search:<input name='query' type="text" onChange={handleSeaech}/>
+        search:<input name='query' type="text" onChange={handleSearch}/>
       </div>
       {filterList && filterList.map((item,index)=>{
         <div key={index}>{item}</div>
