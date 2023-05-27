@@ -15,7 +15,7 @@ const handleSearch =(event)=>{
   }
   const filteredValues = list.filter(
     (item)=>item.toLowerCase().indexOf(event.target.value.toLowerCase())!==-1);
-    setFilterList(filterList);
+    setFilterList(filteredValues);
 };
 
   return (
